@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Краткая визуальная памятка по брендбуку МОНИКА">
+  <title>МОНИКА — визуальная памятка</title>
+  <style>
+    :root{color-scheme:light;--ink:#111111;--muted:#66636a;--paper:#f8f7f8;--line:#e8e4e8;--pink:#ff00b8;--orange:#ff431f;--lilac:#bfa6f2;--blue:#bce9fa}
+    *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    main{max-width:1080px;margin:auto;padding:32px 24px 64px}.hero{overflow:hidden;position:relative;min-height:360px;padding:clamp(30px,7vw,76px);border-radius:28px;background:linear-gradient(120deg,#fff 8%,#ff5a20 39%,#ff00b8 65%,#bce9fa 100%);display:flex;align-items:flex-end}.hero:after{content:"";position:absolute;inset:0;background:url("brand_gradient_wave_concept.png") center/cover;opacity:.23;mix-blend-mode:soft-light}.hero-copy{position:relative;z-index:1;max-width:720px}.eyebrow{text-transform:uppercase;letter-spacing:.13em;font-size:.75rem;font-weight:700}.hero h1{margin:.12em 0;font-size:clamp(3.6rem,12vw,8rem);line-height:.85;letter-spacing:-.09em}.hero p{max-width:550px;margin:24px 0 0;font-size:1.12rem}.section{padding:42px 0 0}.section h2{font-size:1.65rem;letter-spacing:-.035em;margin:0 0 16px}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.card{border:1px solid var(--line);background:white;border-radius:18px;padding:22px}.card strong{display:block;font-size:1.02rem;margin-bottom:7px}.card p{margin:0;color:var(--muted)}.palette{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}.swatch{overflow:hidden;border:1px solid var(--line);border-radius:14px;background:white}.sample{height:86px;background:var(--swatch)}.swatch div:last-child{padding:11px 13px}.swatch b{display:block}.swatch code{color:var(--muted)}.note{border-left:4px solid var(--pink);padding:15px 18px;background:white;border-radius:0 12px 12px 0}.preview{width:100%;display:block;border-radius:18px;border:1px solid var(--line);margin-top:12px}.foot{padding-top:44px;color:var(--muted);font-size:.9rem}.foot a{color:inherit}
+    @media(max-width:720px){.grid{grid-template-columns:1fr}.palette{grid-template-columns:repeat(2,minmax(0,1fr))}.hero{min-height:300px;border-radius:20px}main{padding:18px 16px 44px}}
+  </style>
+</head>
+<body>
+<main>
+  <header class="hero">
+    <div class="hero-copy"><div class="eyebrow">Визуальная памятка · версия 1.0</div><h1>МОНИКА</h1><p>Мониторинг качества ПВЗ. Превращаем фотографии, данные и ML-модели в понятные решения для бизнеса.</p></div>
+  </header>
+  <section class="section"><h2>Основа бренда</h2><div class="grid">
+    <article class="card"><strong>Ясность</strong><p>Название и короткий текст объясняют, кто мы и чем помогаем.</p></article>
+    <article class="card"><strong>Спокойная точность</strong><p>Строгая типографика и свободное пространство удерживают порядок.</p></article>
+    <article class="card"><strong>Один яркий акцент</strong><p>Цветная волна добавляет характер и остаётся фоном для сообщения.</p></article>
+  </div></section>
+  <section class="section"><h2>Цветовые ориентиры</h2><p class="note">Это рекомендуемые цифровые значения из брендбука, не утверждённые цветовые эталоны.</p><div class="palette" style="margin-top:14px">
+    <div class="swatch"><div class="sample" style="--swatch:#111111"></div><div><b>Чёрный</b><code>#111111</code></div></div>
+    <div class="swatch"><div class="sample" style="--swatch:#404040"></div><div><b>Графит</b><code>#404040</code></div></div>
+    <div class="swatch"><div class="sample" style="--swatch:#E6E6E6"></div><div><b>Светло-серый</b><code>#E6E6E6</code></div></div>
+    <div class="swatch"><div class="sample" style="--swatch:#FFFFFF"></div><div><b>Белый</b><code>#FFFFFF</code></div></div>
+    <div class="swatch"><div class="sample" style="--swatch:#FF431F"></div><div><b>Оранжевый</b><code>#FF431F</code></div></div>
+    <div class="swatch"><div class="sample" style="--swatch:#FF00B8"></div><div><b>Розовый</b><code>#FF00B8</code></div></div>
+    <div class="swatch"><div class="sample" style="--swatch:#BFA6F2"></div><div><b>Сиреневый</b><code>#BFA6F2</code></div></div>
+    <div class="swatch"><div class="sample" style="--swatch:#BCE9FA"></div><div><b>Голубой</b><code>#BCE9FA</code></div></div>
+  </div></section>
+  <section class="section"><h2>Типографика и знак</h2><div class="grid">
+    <article class="card"><strong>Заголовки — Inter Bold / Black</strong><p>Крупный гротеск, короткие строки и чёткая иерархия. Исходный шрифт логотипа не установлен: используйте мастер-знак.</p></article>
+    <article class="card"><strong>Основной текст — Inter Regular</strong><p>Простой текст с хорошей читаемостью. IBM Plex Mono подходит для кодов, дат и метаданных.</p></article>
+    <article class="card"><strong>Охранное поле — минимум ½ высоты «М»</strong><p>Измеряйте от букв, а не от края фоновой картинки. На небольшом размере убирайте подпись.</p></article>
+  </div></section>
+  <section class="section"><h2>Применение</h2><div class="grid">
+    <article class="card"><strong>Название</strong><p>Используйте «МОНИКА» как основное написание. MONIKA подходит для английского языка. В одном макете оставляйте один вариант.</p></article>
+    <article class="card"><strong>Контраст</strong><p>На светлом фоне — чёрный знак, на тёмном — белый. Не располагайте белые буквы на самом светлом участке текстуры.</p></article>
+    <article class="card"><strong>Не искажать</strong><p>Не растягивайте знак и не добавляйте теней, объёма или обводок. Проверяйте читаемость малых размеров.</p></article>
+  </div><img class="preview" src="brand_identity_overview_concept.png" alt="Обзорная концепция визуальной системы МОНИКА"></section>
+  <footer class="foot">Материалы и мокапы в этой папке — концепты. Правила и палитра в PDF предложены для согласования. <a href="brandbook_monika.pdf">Открыть полный брендбук (PDF)</a>.</footer>
+</main>
+</body>
+</html>
